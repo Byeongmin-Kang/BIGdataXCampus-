@@ -78,22 +78,21 @@ public class CustomerManager3 {
 					System.out.println("삭제할 데이터가 선택되지 않았습니다.");
 				}
 				break;
-	         case 'q' :
-	             System.out.println("프로그램을 종료합니다.");
-	             scan.close();   //Scanner 객체를 닫아준다.
-	             
-	             if(count > 0) {
-	                fileSaveCustomerData();
-	                System.out.println("asdf");
-	             }
-	             
-	             System.exit(0);   //프로그램을 종료시킨다.
-	             break;   
-			default : 
-				System.out.println("메뉴를 잘 못 입력했습니다.");	
-			}//end switch
-		}//end while
-	}//end main
+			 case 'q' :
+			     System.out.println("프로그램을 종료합니다.");
+			     scan.close();   //Scanner 객체를 닫아준다.
+
+			     if(count > 0) {
+				fileSaveCustomerData();
+			     }
+
+			     System.exit(0);   //프로그램을 종료시킨다.
+			     break;   
+				default : 
+					System.out.println("메뉴를 잘 못 입력했습니다.");	
+				}//end switch
+			}//end while
+		}//end main
 
 	public static void insertCustomerData() {
 
