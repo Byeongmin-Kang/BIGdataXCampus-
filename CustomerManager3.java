@@ -32,7 +32,6 @@ public class CustomerManager3 {
 			case 'i':
 				System.out.println("고객정보 입력을 시작합니다.");
 				insertCustomerData();
-				System.out.println("고객정보를 입력했습니다.");
 				break;
 			case 'p' :
 				System.out.println("이전 데이터를 출력합니다.");
@@ -159,6 +158,7 @@ public class CustomerManager3 {
 
 	         // 고객 객체를 ArrayList에 저장
 	         custList.add(cust);
+		  System.out.println("고객정보를 입력했습니다.");
 	      }
 	   }
 	public static void fileSaveCustomerData() {
